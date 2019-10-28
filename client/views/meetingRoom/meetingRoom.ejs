@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+    <link href="./css/main.css" type="text/css" rel="stylesheet">
+<body>
+    <div id="ready" style="text-align: center">
+        <video id="readyVideo" autoplay playsinline></video>
+        <p>화면 잘 나오는 지 확인하세요.</p>
+        <input type="button" id="join" value="입장">
+    </div> 
+    <div id="container">
+            <div class="leftSide">
+                    <!-- 방에 대한 옵션들-->
+                    <input type="button" class="buttons">
+                    <input type="button" class="buttons">
+                    <input type="button" class="buttons">
+                    <input type="button" class="buttons" id="exitButton">
+                </div>
+                <div id="videos-container">
+                </div>
+            
+                <div class="rightSide">
+                    <!--내 화면과 방접속자 목록 채팅-->
+                    <div id="joinList"> 
+                        <h3><p>접속자 목록</p></h3>
+                    </div>
+                    <div id="chatting">
+                        <div id="chatArea">
+                            <h3><p>채팅 내용</p></h3>
+                        </div>
+                        <div id="inputChat">
+                            <input id="sendmessage" type="text" placeholder="채팅 쓰세요">
+                            <input id="b" type="button" value="입력">
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <script src="./dist/RTCMultiConnection.js"></script>
+    
+    <link rel="stylesheet" href="./dist/getHTMLMediaElement.css">
+    <script src="./dist/getHTMLMediaElement.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

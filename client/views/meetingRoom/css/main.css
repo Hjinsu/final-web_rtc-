@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    display: flex;
+    height: 720px;
+}
+
+.leftSide{
+    flex: 0.2;
+    height: 100%;
+    background-color: aqua;
+}
+
+#videos-container{
+    flex: 3;
+    height: 100%;
+    background-color: orchid;
+}
+
+.rightSide{
+    flex: 1;
+    height: 100%;
+    background-color: orange;
+}
+
+.buttons{
+    width:65px;
+    height: 65px;
+}
+
+#joinList{
+    height: 100px;
+    background-color: aliceblue
+}
+#chatArea{
+    height: 400px;
+    background-color: brown;
+}
+
+#c{
+    width: 300px;
+}
+
+#chatArea{
+    overflow: auto;
+}

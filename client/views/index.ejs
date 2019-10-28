@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <%
+        if(url !== ''){
+            %>
+                <a href="/test/#<%=url%>"><%=url%></a>
+            <%
+        }
+    %>
+    <input type="button" value="방 생성" onclick="location.href='/meetingRoom'"><br>
+    <input type="text" placeholder="참가할 방이름을 쓰세용" id="joinText"> 
+    <button id="joinButton">방 참가</button>
+    <script src="index.js"></script>
+</body>
+</html>
